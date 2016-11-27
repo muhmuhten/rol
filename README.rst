@@ -45,6 +45,11 @@ symlink as *end* to ``rol``.
 intended to allow ``rol`` to be called with a list of names which do not all
 exist, so that new entries are added as needed.
 
+It is the user's responsibility to choose a correct *via* name. Generally, it
+is necessary for all *via*, *dst*, *end* to be on the same filesystem, and
+there must be no existing file named *via*; ``rol`` should generally fail if
+these conditions are not met.
+
 Gratuitous use of BSD error functions.
 
 License
